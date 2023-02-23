@@ -27,3 +27,5 @@ Run shell script and provide option as "local"
 Destroy infra on local
 Steps:
 Run destroy shell script and provide option as "local" append --auto-approve to continue without confirmation.
+
+Infra provision on AWS
