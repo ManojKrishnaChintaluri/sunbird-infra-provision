@@ -19,7 +19,7 @@ jobs:
     - name: Run terraform script
       run: |
         cd ../../
-        cd terrform/aws
+        cd ./terrform/aws
         terraform init -backend-config=terraform_backend.conf
         terraform plan
         terraform apply
