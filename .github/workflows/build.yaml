@@ -1,4 +1,4 @@
-```name: Deploy workflow for obsrv one click
+name: Deploy workflow for obsrv one click
 
 # on:
 #   workflow_dispatch:
@@ -37,7 +37,6 @@ jobs:
         terraform init -backend-config=terraform_backend.conf
         terraform plan
         terraform apply
-
     # - name: Checkout public repo hcx-devops 
     #   uses: actions/checkout@v3
     #   with:
@@ -77,5 +76,3 @@ jobs:
     #    # token: '${{ github.token }}'
     #     values: |
     #       common.image.tag=${{ env.IMAGE_TAG }}
-
-```
