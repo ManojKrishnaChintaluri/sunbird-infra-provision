@@ -18,7 +18,7 @@ jobs:
         aws-region: us-east-2
     - name: Run terraform script
       run: |
-        cd ../../
+        ls
         cd ./terrform/aws
         terraform init -backend-config=terraform_backend.conf
         terraform plan
