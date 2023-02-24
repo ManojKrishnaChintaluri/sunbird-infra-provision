@@ -22,4 +22,4 @@ jobs:
         cd ./terraform/aws
         terraform init -backend-config=terraform_backend.conf
         terraform plan
-        terraform apply
+        terraform apply -auto-approve
