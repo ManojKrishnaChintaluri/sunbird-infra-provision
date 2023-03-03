@@ -18,7 +18,7 @@ jobmanager:
 rest_port: 80
 resttcp_port: 8081
 service:
-  type: LoadBalancer
+  type: ClusterIP
 
 
 taskmanager:
@@ -27,6 +27,18 @@ taskmanager:
   heap_memory: 1024
   replicas: 1
   cpu_requests: 0.3
+
+checkpoint_store_type: ""
+
+# AWS S3 Details
+s3_access_key: ""
+s3_secret_key: ""
+s3_endpoint: ""
+s3_path_style_access: ""
+
+# Azure Container Details
+azure_account: ""
+azure_secret: ""
 
 log4j_console_properties: |
   # This affects logging for both user code and Flink

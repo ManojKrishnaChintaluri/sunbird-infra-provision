@@ -51,37 +51,3 @@ variable "monitoring_install_timeout" {
     description = "Monitoring chart install timeout."
     default     = 1200
 }
-
-# End prometheus stack chart for monitoring
-
-# # Start Prometheus chart for monitoring
-
-# variable "prometheus_release_name" {
-#     type        = string
-#     description = "Monitoring helm release name."
-#     default     = "prometheus"
-# }
-
-# variable "prometheus_chart_install_timeout" {
-#     type        = number
-#     description = "Monitoring chart install timeout."
-#     default     = 3000
-# }
-
-# variable "prometheus_chart_name" {
-#     type        = string
-#     description = "Monitoring chart name."
-#     default     = "prometheus"
-# }
-
-# variable "prometheus_chart_version" {
-#     type        = string
-#     description = "Monitoring chart version."
-#     default     = "19.6.1"
-# }
-
-# variable "prometheus_namespace" {
-#     type        = string
-#     description = "Superset namespace."
-#     default     = "prometheus"
-# }
