@@ -19,7 +19,7 @@ variable "flink_chart_path" {
 variable "flink_chart_install_timeout" {
     type        = number
     description = "Flink chart install timeout."
-    default     = 1000
+    default     = 900
 }
 
 variable "flink_create_namespace" {

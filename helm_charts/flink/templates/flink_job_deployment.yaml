@@ -126,6 +126,9 @@ spec:
           mountPath: /data/flink/conf/base-config.conf
           subPath: base-config.conf
         - name: flink-config-volume
+          mountPath: /data/flink/conf/dataset-registry.conf
+          subPath: dataset-registry.conf
+        - name: flink-config-volume
           mountPath: /data/flink/conf/{{ .Release.Name }}.conf
           subPath: {{ .Release.Name }}.conf
         - name: flink-config-volume
@@ -199,4 +202,7 @@ spec:
           subPath: flink-conf.yaml
         - name: flink-config-volume
           mountPath: /opt/flink/conf/log4j-console.properties
-          subPath: log4j-console.properties   
+          subPath: log4j-console.properties  
+        - name: flink-config-volume
+          mountPath: /data/flink/conf/dataset-registry.conf
+          subPath: dataset-registry.conf 
