@@ -1,7 +1,7 @@
 variable "flink_release_name" {
     type        = string
     description = "Flink helm release name."
-    default     = "druid-validator"
+    default     = "obsrv-pipeline-merged"
 }
 
 variable "flink_namespace" {
@@ -19,7 +19,7 @@ variable "flink_chart_path" {
 variable "flink_chart_install_timeout" {
     type        = number
     description = "Flink chart install timeout."
-    default     = 900
+    default     = 1000
 }
 
 variable "flink_create_namespace" {
@@ -43,5 +43,5 @@ variable "flink_chart_template" {
 variable "flink_kubernetes_service_name" {
     type        = string
     description = "Flink kubernetes service name."
-    default     = "druid-validator-jobmanager"
+    default     = "obsrv-pipeline-merged"
 }

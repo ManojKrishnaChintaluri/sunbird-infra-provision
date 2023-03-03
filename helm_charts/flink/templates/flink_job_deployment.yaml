@@ -79,6 +79,8 @@ spec:
             path: {{ .Release.Name }}.conf
           - key: log4j_console_properties
             path: log4j-console.properties
+          - key: dataset_registry
+            path: dataset_registry  
       restartPolicy: OnFailure
 #      imagePullSecrets:
 #      - name: {{ .Values.imagepullsecrets }}
