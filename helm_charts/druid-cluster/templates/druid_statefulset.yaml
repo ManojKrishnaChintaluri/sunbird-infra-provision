@@ -89,8 +89,10 @@ spec:
     druid.indexer.logs.type={{ .Values.druid_indexer_logs_type }}
     druid.indexer.logs.container={{ .Values.druid_indexer_logs_container }}
     druid.indexer.logs.prefix={{ .Values.druid_indexer_logs_prefix }}
-        #
-        #
+    druid.indexer.logs.s3Bucket={{ .Values.druid_indexer_logs_container }}
+    druid.indexer.logs.s3Prefix= {{ .Values.druid_indexer_logs_prefix }}
+        
+    
     # Service discovery
     druid.selectors.indexing.serviceName={{ .Values.druid_selectors_indexing_serviceName }}
     druid.selectors.coordinator.serviceName={{ .Values.druid_selectors_coordinator_serviceName }}
