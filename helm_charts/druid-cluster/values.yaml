@@ -159,7 +159,7 @@ druid_middlemanager_heap_size: 128M
 druid_middlemanager_persistent_volume_size: 1G
 
 # Number of tasks per middleManager
-druid_worker_capacity: 1
+druid_worker_capacity: 2
 druid_middlemanager_peon_heap_size: 256M
 
 # Task launch parameters
