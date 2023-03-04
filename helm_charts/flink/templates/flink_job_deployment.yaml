@@ -75,6 +75,8 @@ spec:
             path: flink-conf.yaml
           - key: base-config
             path: base-config.conf
+          - key: dataset-registry
+            path: dataset-registry.conf  
           - key: {{ .Release.Name }}
             path: {{ .Release.Name }}.conf
           - key: log4j_console_properties
@@ -203,6 +205,3 @@ spec:
         - name: flink-config-volume
           mountPath: /opt/flink/conf/log4j-console.properties
           subPath: log4j-console.properties  
-        - name: flink-config-volume
-          mountPath: /data/flink/conf/dataset-registry.conf
-          subPath: dataset-registry.conf 
