@@ -73,9 +73,9 @@ spec:
     # Deep storage
     druid.storage.type={{ .Values.druid_deepstorage_type }}
     # AWS
-    druid.s3.accessKey = {{ .Values.s3_access_key }}
-    druid.s3.secretKey = {{ .Values.s3_secret_key }}
-    druid.storage.bucket={{ .Values.s3_bucket }}
+    druid.s3.accessKey = AKIA2SANCC6IST2G6KVW
+    druid.s3.secretKey = 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
+    druid.storage.bucket= obsrv-data-storage
     druid.storage.baseKey=druid/segments
     # Azure
     druid.azure.account = {{ .Values.azure_storage_account_name }}

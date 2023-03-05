@@ -19,7 +19,7 @@ variable "druid_cluster_chart_path" {
 variable "druid_cluster_chart_install_timeout" {
     type        = number
     description = "Druid cluster chart install timeout."
-    default     = 3000
+    default     = 3500
 }
 
 variable "druid_cluster_create_namespace" {
